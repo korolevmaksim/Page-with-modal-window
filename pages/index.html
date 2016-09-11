@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+</head>
+<body>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+
+    <div class="modal-content">
+        <span class="close">x</span>
+        <pre><code  id="text-in-modal" class="json">
+        </code></pre>
+    </div>
+
+</div>
+    <!--<input  type="button" onclick="message('Test')" name="Test" />-->
+    <!-- Modal content -->
+    <!--<div class="modal-content">-->
+        <!--<div class="modal-header">-->
+            <!--<span class="close">×</span>-->
+            <!--<h2>Modal Header</h2>-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+            <!--<p>Some text in the Modal Body</p>-->
+            <!--<p>Some other text...</p>-->
+        <!--</div>-->
+        <!--<div class="modal-footer">-->
+            <!--<h3>Modal Footer</h3>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <table class="overme" style="table-layout: fixed; width: 100%">
+        <tr>
+            <td onclick="message((this).innerHTML)" class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">{
+                "firstName": "Иван",
+                "lastName": "Иванов",
+                "address": {
+                "streetAddress": "Московское ш., 101, кв.101",
+                "city": "Ленинград",
+                "postalCode": 101101
+                },
+                "phoneNumbers": [
+                "812 123-1234",
+                "916 123-4567"
+                ]
+                }</td>
+            <td class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td class="overme" style="border: 1px solid; width: 50px;word-wrap: break-word; height: 10px;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+        </tr>
+    </table>
+
+    <!--<textarea style="width: 400px; height: 400px;">-->
+<pre id="code"><code class="json">{
+   "firstName": "Иван",
+   "lastName": "Иванов",
+   "address": {
+       "streetAddress": "Московское ш., 101, кв.101",
+       "city": "Ленинград",
+       "postalCode": 101101
+   },
+   "phoneNumbers": [
+       "812 123-1234",
+       "916 123-4567"
+   ]
+}
+        </code></pre>
+    <!--</textarea>-->
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
